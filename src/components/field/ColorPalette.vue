@@ -144,7 +144,6 @@ export default {
             if(!options.length) return false
             let option = options[0]
             return this.isObject(option) &&
-                   Object.keys(option).length == 2 &&
                    Object.keys(option).includes('text') &&
                    Object.keys(option).includes('value')
         },
